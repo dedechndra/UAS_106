@@ -100,6 +100,20 @@ namespace UAS_106
                         preorder(ptr.rchild);
                     }
                 }
+                public void postorder(node ptr)
+                {
+                    if (ROOT == null)
+                    {
+                        Console.Write("Tree is empty");
+                        return;
+                    }
+                    if (ptr != null)
+                    {
+                        postorder(ptr.lchild);
+                        postorder(ptr.rchild);
+                        Console.Write(ptr.info + "");
+                    }
+                }
             }
         }
      }
