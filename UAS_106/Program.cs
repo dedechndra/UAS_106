@@ -115,9 +115,14 @@ namespace UAS_106
                     }
                 }
             }
+            static void Main(string[] args)
+            {
+                Console.WriteLine("Hello World!");
+            }
         }
-     }
- }
+    }
+}
+
 
 
 
